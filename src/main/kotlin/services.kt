@@ -24,9 +24,9 @@ val tts = TextToSpeechClient.create()
 
 /**
  * Performs TTS synthesis
- * @return mp3 bytearray
+ * @return mp3 bytearray's input stream
  */
-fun speak(text: String): ByteArray {
+fun speak(text: String): InputStream {
     val input = SynthesisInput.newBuilder()
         .setText(text)
         .build()
@@ -49,7 +49,7 @@ fun speak(text: String): ByteArray {
         input, voice,
         audioConfig
     )
-    return response.audioContent.toByteArray()
+    return response.audioContent.toByteArray().inputStream()
 }
 
 /**

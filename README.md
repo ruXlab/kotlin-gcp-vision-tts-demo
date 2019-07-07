@@ -9,6 +9,10 @@ It's a demo web application written using kotlin language for JVM.
 Essentially it's a website allowing user to upload pictures to GCP Storage,
 automatically annotate content using GCP Vision and even read it using TTS GCP Text-to-Speech
 
+![demo gallery](./demo-gallery.png)
+
+![demo - vision](./demo-vision.png)
+
 It highlights use of kotlin for backend, Google Cloud Platform APIs and kotlin type-safe html builder
 
 ## What technologies does it use?
@@ -20,7 +24,7 @@ It highlights use of kotlin for backend, Google Cloud Platform APIs and kotlin t
 
 
 
-## How to start?
+## How to start this thing?
 
 * Make sure you have java 8 installed
 * Specify environment variables:
